@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.gatech</groupId>
-	<artifactId>streamingwars</artifactId>
+	<artifactId>GroceryExpress</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>streamingwars</name>
+	<name>GroceryExpress</name>
 	<description>Example web service</description>
 
 	<properties>
@@ -41,6 +41,11 @@
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
 
 
 		<dependency>
