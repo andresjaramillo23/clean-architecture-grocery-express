@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 import edu.gatech.GroceryExpress.models.ERole;
@@ -34,10 +36,8 @@ import edu.gatech.GroceryExpress.repository.UserRepository;
 public class AuthController {
 
     @Autowired
-    UserRepository userRepository;
+    UserRepository repository;
 
-    @Autowired
-    RoleRepository roleRepository;
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser() {
@@ -45,8 +45,16 @@ public class AuthController {
         User user = new User("User1",
                 "user@gmail.com",
                 "password");
-        userRepository.save(user);
+        repository.save(user);
         return ResponseEntity.ok("user registered");
+    }
+
+    public static void main(String a[]){
+
+        String password = "123456";
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String encodedPassword = passwordEncoder.encode(password);
+        System.out.print(encodedPassword);
     }
 
 }
