@@ -1,5 +1,4 @@
 package edu.gatech.GroceryExpress.Security;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,13 +12,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
 import org.springframework.security.crypto.password.DelegatingPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
-
-
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
@@ -42,39 +37,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-/*
         http
                 .authorizeRequests()
-                .antMatchers("/index.html")
+                .antMatchers("/welcome.html")
                 .hasAnyRole("USER","ADMIN")
                 .antMatchers("/admin/admin.html")
                 .hasRole("ADMIN")
                 .and()
-                .formLogin()
-
+                .formLogin().permitAll().defaultSuccessUrl("/welcome.html")
                 .and()
-                .logout();
-*/
+                .logout().logoutSuccessUrl("/").permitAll();
+    }
 
-
-/*
-        http
-                .authorizeRequests().antMatchers("/index.html").hasAnyRole("USER","ADMIN")
-                .antMatchers("/admin/admin.html").hasRole("ADMIN")
-                .and()
-                .formLogin().permitAll()
-                .and()
-                .logout();
-*/
-
-
-
+ /*   @Override
+    protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests().antMatchers("/*").permitAll()
                 .and()
                 .csrf().disable();
-
-    }
-
-
+    }*/
 }
