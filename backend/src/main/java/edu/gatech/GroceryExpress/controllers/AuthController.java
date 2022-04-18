@@ -38,7 +38,7 @@ public class AuthController {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
-
+        user.setRole("ROLE_USER");
         repository.save(user);
 
         return "register_success";
