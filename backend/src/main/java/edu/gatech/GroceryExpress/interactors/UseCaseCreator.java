@@ -1,12 +1,19 @@
 package edu.gatech.GroceryExpress.interactors;
 
 import edu.gatech.GroceryExpress.gateways.GatewayFactoryImplementation;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.*;
 import edu.gatech.GroceryExpress.services.requests.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UseCaseCreator implements RequestFactory {
 
-    GatewayFactoryImplementation gatewayFactory = new GatewayFactoryImplementation();
+//    GatewayFactoryImplementation gatewayFactory = new GatewayFactoryImplementation();
+    @Autowired
+    InMemoryGatewayRepository gatewayFactory;
 
     @Override
     public StoreMakerRequest makeStore(StoreMakerResponse response) {

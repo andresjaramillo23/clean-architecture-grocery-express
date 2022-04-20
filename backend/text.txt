@@ -1,0 +1,6 @@
+// create stores
+make_store,kroger,33000
+display_stores
+// create stores
+make_store,publix,33000
+display_stores

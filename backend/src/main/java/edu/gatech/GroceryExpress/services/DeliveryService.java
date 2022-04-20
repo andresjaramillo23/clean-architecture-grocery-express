@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.services;
 import edu.gatech.GroceryExpress.interactors.UseCaseCreator;
 import edu.gatech.GroceryExpress.interactors.responses.*;
 import edu.gatech.GroceryExpress.services.requests.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Properties;
@@ -10,10 +11,10 @@ import java.util.Properties;
 @Service
 public class DeliveryService {
 
-    private RequestFactory requestFactory;
+    @Autowired
+    private UseCaseCreator requestFactory;
 
     public DeliveryService() {
-        this.requestFactory = new UseCaseCreator();
     }
 
     public void makeStoreRequest(String language, String currency, Properties properties, StoreMakerResponse response) {

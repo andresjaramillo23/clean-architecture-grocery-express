@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.OrderDisplayerResponse;
 import edu.gatech.GroceryExpress.models.Store;
 import edu.gatech.GroceryExpress.services.requests.OrderDisplayerRequest;
@@ -16,16 +17,16 @@ public class OrderDisplayer implements OrderDisplayerRequest {
     private String store;
     private String language;
     private String currency;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public OrderDisplayer(OrderDisplayerResponse response, GatewayFactory gatewayFactory) {
+    public OrderDisplayer(OrderDisplayerResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = gatewayRepository.retrieveStores();
 
         if (GroceryExpressUtility.isMissing(stores, this.store))

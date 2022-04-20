@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.FlyDroneCommandResponse;
 import edu.gatech.GroceryExpress.models.Drone;
 import edu.gatech.GroceryExpress.models.Pilot;
@@ -20,16 +21,16 @@ public class FlyDroneCommand implements FlyDroneCommandRequest {
     private String drone;
     private String pilotAccount;
     private String language;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public FlyDroneCommand(FlyDroneCommandResponse response, GatewayFactory gatewayFactory) {
+    public FlyDroneCommand(FlyDroneCommandResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = new ArrayList<>(gatewayRepository.retrieveStores());
         List<Pilot> pilots = new ArrayList<>(gatewayRepository.retrievePilots());
 

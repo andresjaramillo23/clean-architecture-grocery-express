@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.CustomerMakerResponse;
 import edu.gatech.GroceryExpress.models.Customer;
 import edu.gatech.GroceryExpress.services.requests.CustomerMakerRequest;
@@ -22,16 +23,16 @@ public class CustomerMaker implements CustomerMakerRequest {
     private String credit;
     private String language;
     private String currency;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public CustomerMaker(CustomerMakerResponse response, GatewayFactory gatewayFactory) {
+    public CustomerMaker(CustomerMakerResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
 
         List<Customer> customers = new ArrayList<>(gatewayRepository.retrieveCustomers());
 

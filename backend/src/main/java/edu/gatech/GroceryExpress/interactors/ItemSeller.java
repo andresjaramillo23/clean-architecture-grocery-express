@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.ItemSellerResponse;
 import edu.gatech.GroceryExpress.models.Item;
 import edu.gatech.GroceryExpress.models.Store;
@@ -20,16 +21,16 @@ public class ItemSeller implements ItemSellerRequest {
     private String item;
     private String weight;
     private String language;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public ItemSeller(ItemSellerResponse response, GatewayFactory gatewayFactory) {
+    public ItemSeller(ItemSellerResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = new ArrayList<>(gatewayRepository.retrieveStores());
 
         List<Item> items = stores.stream()
