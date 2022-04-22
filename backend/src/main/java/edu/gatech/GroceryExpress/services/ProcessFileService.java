@@ -4,6 +4,8 @@ import edu.gatech.GroceryExpress.interactors.responses.*;
 import edu.gatech.GroceryExpress.presenters.*;
 import edu.gatech.GroceryExpress.presenters.models.DeliveryServiceViewModel;
 import edu.gatech.GroceryExpress.presenters.views.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -26,14 +28,19 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
         this.deliveryService = deliveryService;
     }
 
-    public void processFile(MultipartFile file) {
+    public String processFile(MultipartFile file) {
+        String responseBody = "";
+        StringBuilder bodyBuilder = new StringBuilder();
         try {
             List<String> lines = extractLines(file);
-            lines.forEach(line -> {
+            for (String line : lines) {
                 if (line.contains("//")) {
                     System.out.println("> " + line);
+                    bodyBuilder.append(String.format("> %s\n", line));
                 } else {
                     String[] input = line.split(WORD_DELIMITER);
+                    System.out.println("> " + line);
+                    bodyBuilder.append(String.format("> %s\n", line));
 
                     switch (input[0]) {
                         case "make_store":
@@ -43,11 +50,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             properties.setProperty("revenue", input[2]);
                             deliveryService.makeStoreRequest("", "", properties, storeMakerResponse);
                             System.out.println(this.model.makeStoreStatus);
+                            bodyBuilder.append(this.model.makeStoreStatus);
                             break;
                         case "display_stores":
                             StoreDisplayerPresenter storeDisplayerPresenter = new StoreDisplayerPresenter(this);
                             deliveryService.displayStoresRequest("", "", storeDisplayerPresenter);
                             System.out.println(this.model.displayStores);
+                            bodyBuilder.append(this.model.displayStores);
                             break;
                         case "sell_item":
                             ItemSellerResponse itemSellerResponse = new ItemSellerPresenter(this);
@@ -56,11 +65,14 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             properties.setProperty("item", input[2]);
                             properties.setProperty("weight", input[3]);
                             deliveryService.sellItemRequest("", properties, itemSellerResponse);
+                            System.out.println(this.model.sellItemStatus);
+                            bodyBuilder.append(this.model.sellItemStatus);
                             break;
                         case "display_items":
                             ItemDisplayerResponse itemDisplayerResponse = new ItemDisplayerPresenter(this);
                             deliveryService.displayItemRequest("", input[1], itemDisplayerResponse);
                             System.out.println(this.model.displayItems);
+                            bodyBuilder.append(this.model.displayItems);
                             break;
                         case "make_pilot":
                             properties = new Properties();
@@ -75,11 +87,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             PilotMakerResponse pilotMakerResponse = new PilotMakerPresenter(this);
                             deliveryService.makePilotRequest("", properties, pilotMakerResponse);
                             System.out.println(this.model.makePilotStatus);
+                            bodyBuilder.append(this.model.makePilotStatus);
                             break;
                         case "display_pilots":
                             PilotDisplayerResponse pilotDisplayerResponse = new PilotDisplayerPresenter(this);
                             deliveryService.displayPilotRequest("", pilotDisplayerResponse);
                             System.out.println(this.model.displayPilots);
+                            bodyBuilder.append(this.model.displayPilots);
                             break;
                         case "make_drone":
                             properties = new Properties();
@@ -91,11 +105,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             DroneMakerResponse droneMakerResponse = new DroneMakerPresenter(this);
                             deliveryService.makeDroneRequest("", properties, droneMakerResponse);
                             System.out.println(this.model.makeDroneStatus);
+                            bodyBuilder.append(this.model.makeDroneStatus);
                             break;
                         case "display_drones":
                             DroneDisplayerResponse droneDisplayerResponse = new DroneDisplayerPresenter(this);
                             deliveryService.displayDronesRequest("", input[1], droneDisplayerResponse);
                             System.out.println(this.model.displayDrones);
+                            bodyBuilder.append(this.model.displayDrones);
                             break;
                         case "fly_drone":
                             properties = new Properties();
@@ -106,6 +122,7 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             FlyDroneCommandResponse flyDroneCommandResponse = new FlyDroneCommandPresenter(this);
                             deliveryService.flyDroneRequest("", properties, flyDroneCommandResponse);
                             System.out.println(this.model.flyDroneStatus);
+                            bodyBuilder.append(this.model.flyDroneStatus);
                             break;
                         case "make_customer":
                             properties = new Properties();
@@ -119,11 +136,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             CustomerMakerResponse customerMakerResponse = new CustomerMakerPresenter(this);
                             deliveryService.makeCustomerRequest("", "", properties, customerMakerResponse);
                             System.out.println(this.model.makeCustomerStatus);
+                            bodyBuilder.append(this.model.makeCustomerStatus);
                             break;
                         case "display_customers":
                             CustomerDisplayerResponse customerDisplayerResponse = new CustomerDisplayerPresenter(this);
                             deliveryService.displayCustomerRequest("", "", customerDisplayerResponse);
                             System.out.println(this.model.displayCustomers);
+                            bodyBuilder.append(this.model.displayCustomers);
                             break;
                         case "start_order":
                             properties = new Properties();
@@ -135,11 +154,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             OrderStarterResponse orderStarterResponse = new OrderStarterPresenter(this);
                             deliveryService.startOrderRequest("", properties, orderStarterResponse);
                             System.out.println(this.model.startOrderStatus);
+                            bodyBuilder.append(this.model.startOrderStatus);
                             break;
                         case "display_orders":
                             OrderDisplayerResponse orderDisplayerResponse = new OrderDisplayerPresenter(this);
                             deliveryService.displayOrdersRequest("", "", input[1], orderDisplayerResponse);
                             System.out.println(this.model.displayOrders);
+                            bodyBuilder.append(this.model.displayOrders);
                             break;
                         case "request_item":
                             properties = new Properties();
@@ -152,27 +173,32 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             ItemRequesterResponse itemRequesterResponse = new ItemRequesterPresenter(this);
                             deliveryService.requestItemRequest("", "", properties, itemRequesterResponse);
                             System.out.println(this.model.requestItemStatus);
+                            bodyBuilder.append(this.model.requestItemStatus);
                             break;
                         case "purchase_order":
                             OrderPurchaserResponse orderPurchaserResponse = new OrderPurchaserPresenter(this);
                             deliveryService.purchaseOrderRequest("", input[1], input[2], orderPurchaserResponse);
                             System.out.println(this.model.purchaseOrderStatus);
+                            bodyBuilder.append(this.model.purchaseOrderStatus);
                             break;
                         case "cancel_order":
                             OrderCancellerResponse orderCancellerResponse = new OrderCancellerPresenter(this);
                             deliveryService.cancelOrderRequest("", input[1], input[2], orderCancellerResponse);
                             System.out.println(this.model.cancelOrderStatus);
+                            bodyBuilder.append(this.model.cancelOrderStatus);
                             break;
                         case "stop":
                             System.out.println("stop acknowledged");
+                            responseBody = bodyBuilder.toString();
                             break;
                     }
                 }
-            });
+            }
 
         } catch (Exception e) {
             System.out.println("Could not read file. Cause: " + e.getMessage());
         }
+        return responseBody;
     }
 
     private List<String> extractLines(MultipartFile file) throws IOException {

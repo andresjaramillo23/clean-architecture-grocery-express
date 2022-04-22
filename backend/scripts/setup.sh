@@ -2,11 +2,11 @@
 
 #docker swarm init
 
-#docker build -t gatech/dronedelivery -f Dockerfile ../
 docker pull postgres:9.6.12
-docker build -t gatech/backend .
+docker build -t gatech/backend ../
 docker build -t gatech/express-nginx ./nginx
 #docker run -p 8080:8080 -t gatech/backend
+#docker run -p 5432:5432 -t postgres
 
 docker node ls
 docker network create --driver overlay sad-local-network
@@ -22,3 +22,11 @@ docker service create --network sad-local-network --name express-nginx-service -
 
 docker service ls
 docker container ls
+
+echo "sleeping for 15 seconds..."
+sleep 15
+
+for x in 1 2 3
+do
+  echo "Pod $x IP Address:" ; curl --request GET 'localhost:8080/test'; echo
+done
