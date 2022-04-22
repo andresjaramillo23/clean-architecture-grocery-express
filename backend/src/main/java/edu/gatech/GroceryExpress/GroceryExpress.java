@@ -8,6 +8,7 @@ public class GroceryExpress {
 
     public static void main(String[] args) {
         SpringApplication.run(GroceryExpress.class, args);
+        System.out.println("Welcome to the Grocery Express Delivery Service!");
     }
 
 }

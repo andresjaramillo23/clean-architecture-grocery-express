@@ -21,15 +21,15 @@ public class DeliveryService {
         StoreMakerRequest request = requestFactory.makeStore(response);
         request.setStore(properties.getProperty("store"));
         request.setRevenue(properties.getProperty("revenue"));
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
     public void displayStoresRequest(String language, String currency, StoreDisplayerResponse response) {
         StoreDisplayerRequest request = requestFactory.displayStores(response);
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
@@ -38,14 +38,14 @@ public class DeliveryService {
         request.setStore(properties.getProperty("store"));
         request.setItem(properties.getProperty("item"));
         request.setWeight(properties.getProperty("weight"));
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
     public void displayItemRequest(String language, String store, ItemDisplayerResponse response) {
         ItemDisplayerRequest request = requestFactory.displayItem(response);
         request.setStore(store);
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
@@ -58,7 +58,7 @@ public class DeliveryService {
         request.setTaxId(properties.getProperty("taxId"));
         request.setlicenseId(properties.getProperty("licenseId"));
         request.setExperienceLevel(properties.getProperty("experienceLevel"));
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
@@ -74,14 +74,14 @@ public class DeliveryService {
         request.setDrone(properties.getProperty("drone"));
         request.setCapacity(properties.getProperty("capacity"));
         request.setFuel(properties.getProperty("fuel"));
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
     public void displayDronesRequest(String language, String store, DroneDisplayerResponse response) {
         DroneDisplayerRequest request = requestFactory.displayDrones(response);
         request.setStore(store);
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
@@ -90,7 +90,7 @@ public class DeliveryService {
         request.setStore(properties.getProperty("store"));
         request.setDrone(properties.getProperty("drone"));
         request.setPilotAccount(properties.getProperty("pilotAccount"));
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
@@ -102,15 +102,15 @@ public class DeliveryService {
         request.setPhoneNumber(properties.getProperty("phoneNumber"));
         request.setRating(properties.getProperty("rating"));
         request.setCredit(properties.getProperty("credit"));
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
     public void displayCustomerRequest(String language, String currency, CustomerDisplayerResponse response) {
         CustomerDisplayerRequest request = requestFactory.displayCustomer(response);
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
@@ -120,15 +120,15 @@ public class DeliveryService {
         request.setOrder(properties.getProperty("order"));
         request.setDrone(properties.getProperty("drone"));
         request.setCustomer(properties.getProperty("customer"));
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
     public void displayOrdersRequest(String language, String currency, String store, OrderDisplayerResponse response) {
         OrderDisplayerRequest request = requestFactory.displayOrders(response);
         request.setStore(store);
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
@@ -139,8 +139,8 @@ public class DeliveryService {
         request.setItem(properties.getProperty("item"));
         request.setQuantity(properties.getProperty("quantity"));
         request.setUnitPrice(properties.getProperty("unitPrice"));
-        request.setLanguage(language);
-        request.setCurrency(currency);
+        request.setLanguage(!language.isEmpty() ? language : "english");
+        request.setCurrency(!currency.isEmpty() ? currency : "dollars");
         request.execute();
     }
 
@@ -148,7 +148,7 @@ public class DeliveryService {
         OrderPurchaserRequest request = requestFactory.purchaseOrder(response);
         request.setStore(store);
         request.setOrder(order);
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 
@@ -156,7 +156,7 @@ public class DeliveryService {
         OrderCancellerRequest request = requestFactory.cancelOrder(response);
         request.setStore(store);
         request.setOrder(order);
-        request.setLanguage(language);
+        request.setLanguage(!language.isEmpty() ? language : "english");
         request.execute();
     }
 }
