@@ -3,9 +3,11 @@ package edu.gatech.GroceryExpress.gateways;
 import edu.gatech.GroceryExpress.models.Customer;
 import edu.gatech.GroceryExpress.models.Pilot;
 import edu.gatech.GroceryExpress.models.Store;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service
 public class InMemoryGatewayRepository implements GatewayRepository {
     private static final Map<String, Store> stores = new HashMap<>();
     private static final Map<String, Pilot> pilots = new HashMap<>();

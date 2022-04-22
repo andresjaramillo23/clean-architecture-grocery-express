@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.OrderStarterResponse;
 import edu.gatech.GroceryExpress.models.Customer;
 import edu.gatech.GroceryExpress.models.Drone;
@@ -23,16 +24,16 @@ public class OrderStarter implements OrderStarterRequest {
     private String drone;
     private String customer;
     private String language;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public OrderStarter(OrderStarterResponse response, GatewayFactory gatewayFactory) {
+    public OrderStarter(OrderStarterResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = new ArrayList<>(gatewayRepository.retrieveStores());
         List<Customer> customers = new ArrayList<>(gatewayRepository.retrieveCustomers());
 

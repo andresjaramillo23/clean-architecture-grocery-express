@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.ItemRequesterResponse;
 import edu.gatech.GroceryExpress.models.*;
 import edu.gatech.GroceryExpress.services.requests.ItemRequesterRequest;
@@ -23,16 +24,16 @@ public class ItemRequester implements ItemRequesterRequest {
     private int weight = 0;
     private String language;
     private String currency;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public ItemRequester(ItemRequesterResponse response, GatewayFactory gatewayFactory) {
+    public ItemRequester(ItemRequesterResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = gatewayRepository.retrieveStores();
         List<Customer> customers = gatewayRepository.retrieveCustomers();
 

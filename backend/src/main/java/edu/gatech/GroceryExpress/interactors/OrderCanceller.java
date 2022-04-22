@@ -3,6 +3,7 @@ package edu.gatech.GroceryExpress.interactors;
 import edu.gatech.GroceryExpress.GroceryExpress;
 import edu.gatech.GroceryExpress.gateways.GatewayFactory;
 import edu.gatech.GroceryExpress.gateways.GatewayRepository;
+import edu.gatech.GroceryExpress.gateways.InMemoryGatewayRepository;
 import edu.gatech.GroceryExpress.interactors.responses.OrderCancellerResponse;
 import edu.gatech.GroceryExpress.models.Drone;
 import edu.gatech.GroceryExpress.models.Order;
@@ -19,16 +20,16 @@ public class OrderCanceller implements OrderCancellerRequest {
     private String store;
     private String order;
     private String language;
-    private GatewayFactory gatewayFactory;
+    private InMemoryGatewayRepository gatewayFactory;
 
-    public OrderCanceller(OrderCancellerResponse response, GatewayFactory gatewayFactory) {
+    public OrderCanceller(OrderCancellerResponse response, InMemoryGatewayRepository gatewayFactory) {
         this.response = Objects.requireNonNull(response);
         this.gatewayFactory = gatewayFactory;
     }
 
     @Override
     public void execute() {
-        GatewayRepository gatewayRepository = gatewayFactory.createGatewayRepository();
+        GatewayRepository gatewayRepository = gatewayFactory;
         List<Store> stores = gatewayRepository.retrieveStores();
 
         if (GroceryExpressUtility.isMissing(stores, store))
