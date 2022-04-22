@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.net.InetAddress;
+
 @Controller
 public class StoreController {
 
@@ -18,7 +20,14 @@ public class StoreController {
 
     @GetMapping("/test")
     public ResponseEntity<String> testing() {
-        return ResponseEntity.ok("test works");
+        String ip = "";
+        try {
+            ip = InetAddress.getLocalHost().toString();
+        } catch (Exception e) {
+            System.out.println("Could not get ip. Cause: " + e.getMessage());
+        }
+
+        return ResponseEntity.ok(!ip.isEmpty() ? ip : "testworks");
     }
 
     @PostMapping("/uploadTest")
