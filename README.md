@@ -40,6 +40,10 @@ This command allows you to see the ip addresses of the backend pods running in t
 ./backend/scripts/view_pods.sh
 ```
 
+You can also see the load balancer in action by visiting `localhost:8081/test`. 
+This will return the pod's id address as the response body.
+If you refresh that page, you can see the ip address change between the 3 pods.
+
 ## Clean up 
 This command stops and removes the docker swarm services along with the unused docker containers.
 ```
