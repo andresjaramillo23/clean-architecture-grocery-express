@@ -1,0 +1,51 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+21c21,22
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+38c39
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+56c57
+< item_name:pot_roast,total_quantity:3,total_cost:27.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:27,total_weight:15
+58c59
+< item_name:pot_roast,total_quantity:4,total_cost:16.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:16,total_weight:20
+64c65
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:73.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:73
+67c68
+< name:kroger,revenue:33027.0 dollars
+---
+> name:kroger,revenue:33027
+71c72
+< item_name:pot_roast,total_quantity:4,total_cost:16.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:16,total_weight:20
+74c75,76
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> OK:display_completed
+79c81
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:73.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:73
+82c84
+< name:kroger,revenue:33027.0 dollars
+---
+> name:kroger,revenue:33027
+87c89,90
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> OK:display_completed

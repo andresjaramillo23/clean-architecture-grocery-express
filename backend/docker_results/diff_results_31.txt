@@ -1,0 +1,22 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+27c27
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+36c36
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+58c58
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+65,66c65,66
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+< item_name:pot_roast,total_quantity:2,total_cost:20.0 dollars,total_weight:18
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+> item_name:pot_roast,total_quantity:2,total_cost:20,total_weight:18

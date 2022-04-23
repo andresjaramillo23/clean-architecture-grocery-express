@@ -31,6 +31,7 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
     public String processFile(MultipartFile file) {
         String responseBody = "";
         StringBuilder bodyBuilder = new StringBuilder();
+        bodyBuilder.append("Welcome to the Grocery Express Delivery Service!\n");
         try {
             List<String> lines = extractLines(file);
             for (String line : lines) {
@@ -50,13 +51,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             properties.setProperty("revenue", input[2]);
                             deliveryService.makeStoreRequest("", "", properties, storeMakerResponse);
                             System.out.println(this.model.makeStoreStatus);
-                            bodyBuilder.append(this.model.makeStoreStatus);
+                            bodyBuilder.append(this.model.makeStoreStatus+ "\n");
                             break;
                         case "display_stores":
                             StoreDisplayerPresenter storeDisplayerPresenter = new StoreDisplayerPresenter(this);
                             deliveryService.displayStoresRequest("", "", storeDisplayerPresenter);
                             System.out.println(this.model.displayStores);
-                            bodyBuilder.append(this.model.displayStores);
+                            bodyBuilder.append(this.model.displayStores+ "\n");
                             break;
                         case "sell_item":
                             ItemSellerResponse itemSellerResponse = new ItemSellerPresenter(this);
@@ -66,13 +67,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             properties.setProperty("weight", input[3]);
                             deliveryService.sellItemRequest("", properties, itemSellerResponse);
                             System.out.println(this.model.sellItemStatus);
-                            bodyBuilder.append(this.model.sellItemStatus);
+                            bodyBuilder.append(this.model.sellItemStatus+ "\n");
                             break;
                         case "display_items":
                             ItemDisplayerResponse itemDisplayerResponse = new ItemDisplayerPresenter(this);
                             deliveryService.displayItemRequest("", input[1], itemDisplayerResponse);
                             System.out.println(this.model.displayItems);
-                            bodyBuilder.append(this.model.displayItems);
+                            bodyBuilder.append(this.model.displayItems+ "\n");
                             break;
                         case "make_pilot":
                             properties = new Properties();
@@ -87,13 +88,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             PilotMakerResponse pilotMakerResponse = new PilotMakerPresenter(this);
                             deliveryService.makePilotRequest("", properties, pilotMakerResponse);
                             System.out.println(this.model.makePilotStatus);
-                            bodyBuilder.append(this.model.makePilotStatus);
+                            bodyBuilder.append(this.model.makePilotStatus+ "\n");
                             break;
                         case "display_pilots":
                             PilotDisplayerResponse pilotDisplayerResponse = new PilotDisplayerPresenter(this);
                             deliveryService.displayPilotRequest("", pilotDisplayerResponse);
                             System.out.println(this.model.displayPilots);
-                            bodyBuilder.append(this.model.displayPilots);
+                            bodyBuilder.append(this.model.displayPilots+ "\n");
                             break;
                         case "make_drone":
                             properties = new Properties();
@@ -105,13 +106,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             DroneMakerResponse droneMakerResponse = new DroneMakerPresenter(this);
                             deliveryService.makeDroneRequest("", properties, droneMakerResponse);
                             System.out.println(this.model.makeDroneStatus);
-                            bodyBuilder.append(this.model.makeDroneStatus);
+                            bodyBuilder.append(this.model.makeDroneStatus+ "\n");
                             break;
                         case "display_drones":
                             DroneDisplayerResponse droneDisplayerResponse = new DroneDisplayerPresenter(this);
                             deliveryService.displayDronesRequest("", input[1], droneDisplayerResponse);
                             System.out.println(this.model.displayDrones);
-                            bodyBuilder.append(this.model.displayDrones);
+                            bodyBuilder.append(this.model.displayDrones+ "\n");
                             break;
                         case "fly_drone":
                             properties = new Properties();
@@ -122,7 +123,7 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             FlyDroneCommandResponse flyDroneCommandResponse = new FlyDroneCommandPresenter(this);
                             deliveryService.flyDroneRequest("", properties, flyDroneCommandResponse);
                             System.out.println(this.model.flyDroneStatus);
-                            bodyBuilder.append(this.model.flyDroneStatus);
+                            bodyBuilder.append(this.model.flyDroneStatus+ "\n");
                             break;
                         case "make_customer":
                             properties = new Properties();
@@ -136,13 +137,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             CustomerMakerResponse customerMakerResponse = new CustomerMakerPresenter(this);
                             deliveryService.makeCustomerRequest("", "", properties, customerMakerResponse);
                             System.out.println(this.model.makeCustomerStatus);
-                            bodyBuilder.append(this.model.makeCustomerStatus);
+                            bodyBuilder.append(this.model.makeCustomerStatus+ "\n");
                             break;
                         case "display_customers":
                             CustomerDisplayerResponse customerDisplayerResponse = new CustomerDisplayerPresenter(this);
                             deliveryService.displayCustomerRequest("", "", customerDisplayerResponse);
                             System.out.println(this.model.displayCustomers);
-                            bodyBuilder.append(this.model.displayCustomers);
+                            bodyBuilder.append(this.model.displayCustomers+ "\n");
                             break;
                         case "start_order":
                             properties = new Properties();
@@ -154,13 +155,13 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             OrderStarterResponse orderStarterResponse = new OrderStarterPresenter(this);
                             deliveryService.startOrderRequest("", properties, orderStarterResponse);
                             System.out.println(this.model.startOrderStatus);
-                            bodyBuilder.append(this.model.startOrderStatus);
+                            bodyBuilder.append(this.model.startOrderStatus+ "\n");
                             break;
                         case "display_orders":
                             OrderDisplayerResponse orderDisplayerResponse = new OrderDisplayerPresenter(this);
                             deliveryService.displayOrdersRequest("", "", input[1], orderDisplayerResponse);
                             System.out.println(this.model.displayOrders);
-                            bodyBuilder.append(this.model.displayOrders);
+                            bodyBuilder.append(this.model.displayOrders+ "\n");
                             break;
                         case "request_item":
                             properties = new Properties();
@@ -173,23 +174,26 @@ public class ProcessFileService implements StoreMakerView, StoreDisplayerView, I
                             ItemRequesterResponse itemRequesterResponse = new ItemRequesterPresenter(this);
                             deliveryService.requestItemRequest("", "", properties, itemRequesterResponse);
                             System.out.println(this.model.requestItemStatus);
-                            bodyBuilder.append(this.model.requestItemStatus);
+                            bodyBuilder.append(this.model.requestItemStatus+ "\n");
                             break;
                         case "purchase_order":
                             OrderPurchaserResponse orderPurchaserResponse = new OrderPurchaserPresenter(this);
                             deliveryService.purchaseOrderRequest("", input[1], input[2], orderPurchaserResponse);
                             System.out.println(this.model.purchaseOrderStatus);
-                            bodyBuilder.append(this.model.purchaseOrderStatus);
+                            bodyBuilder.append(this.model.purchaseOrderStatus+ "\n");
                             break;
                         case "cancel_order":
                             OrderCancellerResponse orderCancellerResponse = new OrderCancellerPresenter(this);
                             deliveryService.cancelOrderRequest("", input[1], input[2], orderCancellerResponse);
                             System.out.println(this.model.cancelOrderStatus);
-                            bodyBuilder.append(this.model.cancelOrderStatus);
+                            bodyBuilder.append(this.model.cancelOrderStatus+ "\n");
                             break;
                         case "stop":
                             System.out.println("stop acknowledged");
+                            bodyBuilder.append("stop acknowledged\n");
+                            bodyBuilder.append("simulation terminated\n");
                             responseBody = bodyBuilder.toString();
+                            deliveryService.resetDB();
                             break;
                     }
                 }

@@ -1,0 +1,4 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000

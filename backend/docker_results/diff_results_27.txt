@@ -1,0 +1,9 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+12c12,13
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed

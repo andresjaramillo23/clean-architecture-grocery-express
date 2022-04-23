@@ -1,0 +1,925 @@
+ ------ Test Case: 0 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+21c21,22
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+38c39
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+56c57
+< item_name:pot_roast,total_quantity:3,total_cost:27.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:27,total_weight:15
+58c59
+< item_name:pot_roast,total_quantity:4,total_cost:16.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:16,total_weight:20
+64c65
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:73.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:73
+67c68
+< name:kroger,revenue:33027.0 dollars
+---
+> name:kroger,revenue:33027
+71c72
+< item_name:pot_roast,total_quantity:4,total_cost:16.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:16,total_weight:20
+74c75,76
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> OK:display_completed
+79c81
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:73.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:73
+82c84
+< name:kroger,revenue:33027.0 dollars
+---
+> name:kroger,revenue:33027
+87c89,90
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> OK:display_completed
+ ------ Test Case: 1 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 2 ----
+6c6,7
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 3 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 4 ----
+6c6
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+ ------ Test Case: 5 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 6 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 7 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+11c11,12
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 8 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+17c17
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+ ------ Test Case: 9 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+22c22
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+34c34
+< item_name:pot_roast,total_quantity:3,total_cost:27.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:27,total_weight:15
+ ------ Test Case: 10 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+25c25
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+42c42
+< item_name:pot_roast,total_quantity:3,total_cost:27.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:27,total_weight:15
+44c44
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+ ------ Test Case: 11 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+17c17,18
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+32c33
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+43c44
+< item_name:pot_roast,total_quantity:3,total_cost:27.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:27,total_weight:15
+49c50
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:73.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:73
+52c53
+< name:kroger,revenue:33027.0 dollars
+---
+> name:kroger,revenue:33027
+57c58,59
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> OK:display_completed
+ ------ Test Case: 12 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+17c17,18
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+32c33
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+43c44
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+49c50
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+52c53
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+57c58,59
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 13 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+14c14,16
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> name:Grape_Geri,phone:999-999-9999,taxID:678-90-1234,licenseID:panam_5,experience:14
+> OK:display_completed
+ ------ Test Case: 14 ----
+14,18c14,18
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57000.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57000
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+91c91,96
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+127,131c132,136
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+206,207c211,212
+< item_name:bacon,total_quantity:3,total_cost:15.0 dollars,total_weight:9
+< item_name:lamb,total_quantity:1,total_cost:10.0 dollars,total_weight:6
+---
+> item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+> item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+209,211c214,216
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+213,216c218,221
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+218,219c223,224
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+225c230
+< item_name:cashews,total_quantity:4,total_cost:24.0 dollars,total_weight:12
+---
+> item_name:cashews,total_quantity:4,total_cost:24,total_weight:12
+232,236c237,241
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57000.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57000
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+239,243c244,248
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+247,248c252,253
+< item_name:bacon,total_quantity:3,total_cost:15.0 dollars,total_weight:9
+< item_name:lamb,total_quantity:1,total_cost:10.0 dollars,total_weight:6
+---
+> item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+> item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+250,252c255,257
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+254,257c259,262
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+259,260c264,265
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+267c272,277
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+272,276c282,286
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57025.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57025
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+279,283c289,293
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+287,289c297,299
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+291,294c301,304
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+296,297c306,307
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+304c314,319
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+312,316c327,331
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57067.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57067
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+319,323c334,338
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+327,330c342,345
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+332,333c347,348
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+340c355,360
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+345,349c365,369
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57067.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57067
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+352,356c372,376
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+360,361c380,381
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+368c388,393
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+373,377c398,402
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+380,384c405,409
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:136.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:136
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+393c418,423
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+397c427
+< item_name:cashews,total_quantity:4,total_cost:24.0 dollars,total_weight:12
+---
+> item_name:cashews,total_quantity:4,total_cost:24,total_weight:12
+406,410c436,440
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38024.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38024
+413,417c443,447
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:112.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:112
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+425c455,460
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:3
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+437,441c472,476
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38024.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38024
+444,448c479,483
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:112.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:112
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+456c491,496
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:3
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:4
+> OK:display_completed
+ ------ Test Case: 15 ----
+10,11c10,11
+< name:kroger,revenue:33000.0 dollars
+< name:publix,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+> name:publix,revenue:33000
+43c43,45
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:31
+> OK:display_completed
+92,93c94,95
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300
+146c148
+< item_name:pot_roast,total_quantity:3,total_cost:30.0 dollars,total_weight:15
+---
+> item_name:pot_roast,total_quantity:3,total_cost:30,total_weight:15
+148c150
+< item_name:pot_roast,total_quantity:4,total_cost:20.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:20,total_weight:20
+150c152
+< item_name:cheesecake,total_quantity:1,total_cost:10.0 dollars,total_weight:4
+---
+> item_name:cheesecake,total_quantity:1,total_cost:10,total_weight:4
+154c156
+< item_name:cheesecake,total_quantity:3,total_cost:30.0 dollars,total_weight:24
+---
+> item_name:cheesecake,total_quantity:3,total_cost:30,total_weight:24
+157,158c159,160
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300
+161,162c163,164
+< name:kroger,revenue:33000.0 dollars
+< name:publix,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+> name:publix,revenue:33000
+172c174,176
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:31
+> OK:display_completed
+178c182
+< item_name:pot_roast,total_quantity:4,total_cost:20.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:20,total_weight:20
+180c184
+< item_name:cheesecake,total_quantity:1,total_cost:10.0 dollars,total_weight:4
+---
+> item_name:cheesecake,total_quantity:1,total_cost:10,total_weight:4
+184c188
+< item_name:cheesecake,total_quantity:3,total_cost:30.0 dollars,total_weight:24
+---
+> item_name:cheesecake,total_quantity:3,total_cost:30,total_weight:24
+187,188c191,192
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:70.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:70
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:300
+191,192c195,196
+< name:kroger,revenue:33030.0 dollars
+< name:publix,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33030
+> name:publix,revenue:33000
+202c206,208
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:34
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:31
+> OK:display_completed
+218c224
+< item_name:pot_roast,total_quantity:4,total_cost:20.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:20,total_weight:20
+222c228
+< item_name:cheesecake,total_quantity:3,total_cost:30.0 dollars,total_weight:24
+---
+> item_name:cheesecake,total_quantity:3,total_cost:30,total_weight:24
+225,226c231,232
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:70.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:290.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:70
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:290
+229,230c235,236
+< name:kroger,revenue:33040.0 dollars
+< name:publix,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33040
+> name:publix,revenue:33000
+240c246,248
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:35
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:31
+> OK:display_completed
+245c253
+< item_name:pot_roast,total_quantity:4,total_cost:20.0 dollars,total_weight:20
+---
+> item_name:pot_roast,total_quantity:4,total_cost:20,total_weight:20
+250,251c258,259
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:70.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:260.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:70
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:260
+254,255c262,263
+< name:kroger,revenue:33040.0 dollars
+< name:publix,revenue:33030.0 dollars
+---
+> name:kroger,revenue:33040
+> name:publix,revenue:33030
+265c273,275
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:35
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:32
+> OK:display_completed
+278,279c288,289
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:70.0 dollars
+< name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:260.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:70
+> name:Carlos_Cherry,phone:444-444-4444,rating:5,credit:260
+282,283c292,293
+< name:kroger,revenue:33040.0 dollars
+< name:publix,revenue:33030.0 dollars
+---
+> name:kroger,revenue:33040
+> name:publix,revenue:33030
+293c303,305
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:35
+> name:Gillian_Grape,phone:999-999-9999,taxID:234-56-7890,licenseID:twa_21,experience:32
+> OK:display_completed
+ ------ Test Case: 16 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 17 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 18 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+18c18
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+ ------ Test Case: 19 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+12c12
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 20 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 21 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 22 ----
+6c6,7
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+14c15,16
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 23 ----
+6c6,7
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+11c12,13
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 24 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 25 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+ ------ Test Case: 26 ----
+6c6
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+12c12
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+ ------ Test Case: 27 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+12c12,13
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 28 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+12c12,13
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 29 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+12c12,13
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+ ------ Test Case: 30 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+18c18
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+ ------ Test Case: 31 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+27c27
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+36c36
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+58c58
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+65,66c65,66
+< item_name:cheesecake,total_quantity:2,total_cost:10.0 dollars,total_weight:8
+< item_name:pot_roast,total_quantity:2,total_cost:20.0 dollars,total_weight:18
+---
+> item_name:cheesecake,total_quantity:2,total_cost:10,total_weight:8
+> item_name:pot_roast,total_quantity:2,total_cost:20,total_weight:18
+ ------ Test Case: 32 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+17c17,18
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+27c28
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+35c36
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+ ------ Test Case: 33 ----
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+23c23
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+31c31
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+40c40
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+43c43
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+47c47
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+53c53
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+56c56
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000

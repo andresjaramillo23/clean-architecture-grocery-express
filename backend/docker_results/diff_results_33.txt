@@ -1,0 +1,32 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+23c23
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+31c31
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+40c40
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+43c43
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+47c47
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
+53c53
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+56c56
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000

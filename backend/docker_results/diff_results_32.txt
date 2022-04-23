@@ -1,0 +1,17 @@
+6c6
+< name:kroger,revenue:33000.0 dollars
+---
+> name:kroger,revenue:33000
+17c17,18
+< 
+---
+> name:Finneas_Fig,phone:888-888-8888,taxID:890-12-3456,licenseID:panam_10,experience:33
+> OK:display_completed
+27c28
+< name:Alana_Apple,phone:222-222-2222,rating:4,credit:100.0 dollars
+---
+> name:Alana_Apple,phone:222-222-2222,rating:4,credit:100
+35c36
+< item_name:cheesecake,total_quantity:4,total_cost:16.0 dollars,total_weight:16
+---
+> item_name:cheesecake,total_quantity:4,total_cost:16,total_weight:16
