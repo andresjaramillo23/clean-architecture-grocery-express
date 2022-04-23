@@ -23,10 +23,6 @@ docker service create --network sad-local-network --name express-nginx-service -
 docker service ls
 docker container ls
 
-echo "sleeping for 15 seconds..."
-sleep 15
+#echo "sleeping for 10 seconds..."
+#for i in $(seq 1 10); do sleep 1s; echo .; done;
 
-for x in 1 2 3
-do
-  echo "Pod $x IP Address:" ; curl --request GET 'localhost:8080/test'; echo
-done

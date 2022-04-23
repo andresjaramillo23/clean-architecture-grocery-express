@@ -17,6 +17,10 @@ public class DeliveryService {
     public DeliveryService() {
     }
 
+    public void resetDB() {
+        requestFactory.resetDB();
+    }
+
     public void makeStoreRequest(String language, String currency, Properties properties, StoreMakerResponse response) {
         StoreMakerRequest request = requestFactory.makeStore(response);
         request.setStore(properties.getProperty("store"));

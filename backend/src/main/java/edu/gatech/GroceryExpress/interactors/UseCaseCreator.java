@@ -15,6 +15,10 @@ public class UseCaseCreator implements RequestFactory {
     @Autowired
     InMemoryGatewayRepository gatewayFactory;
 
+    public void resetDB() {
+        gatewayFactory.resetDB();
+    }
+
     @Override
     public StoreMakerRequest makeStore(StoreMakerResponse response) {
         return new StoreMaker(response, gatewayFactory);

@@ -9,9 +9,15 @@ import java.util.*;
 
 @Service
 public class InMemoryGatewayRepository implements GatewayRepository {
-    private static final Map<String, Store> stores = new HashMap<>();
-    private static final Map<String, Pilot> pilots = new HashMap<>();
-    private static final Map<String, Customer> customers = new HashMap<>();
+    private static Map<String, Store> stores = new HashMap<>();
+    private static Map<String, Pilot> pilots = new HashMap<>();
+    private static Map<String, Customer> customers = new HashMap<>();
+
+    public void resetDB() {
+        stores = new HashMap<>();
+        pilots = new HashMap<>();
+        customers = new HashMap<>();
+    }
 
     @Override
     public void registerStore(Store store) {

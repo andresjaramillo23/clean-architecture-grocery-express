@@ -37,8 +37,6 @@ public class StoreController {
         // TODO: process file then call delivery service
         try {
             String responseBody = processFileService.processFile(file);
-            PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
-            System.setOut(out);
             return ResponseEntity.ok(responseBody);
         } catch (Exception e) {
             System.out.println("Error while tyring to process file: " + e.getMessage());

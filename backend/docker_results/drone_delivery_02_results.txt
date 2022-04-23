@@ -1,0 +1,9 @@
+Welcome to the Grocery Express Delivery Service!
+> // create a pilot
+> make_pilot,ffig8,Finneas,Fig,888-888-8888,890-12-3456,panam_10,33
+OK:change_completed
+> display_pilots
+
+> stop
+stop acknowledged
+simulation terminated

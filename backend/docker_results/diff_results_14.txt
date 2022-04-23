@@ -1,0 +1,378 @@
+14,18c14,18
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57000.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57000
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+91c91,96
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+127,131c132,136
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+206,207c211,212
+< item_name:bacon,total_quantity:3,total_cost:15.0 dollars,total_weight:9
+< item_name:lamb,total_quantity:1,total_cost:10.0 dollars,total_weight:6
+---
+> item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+> item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+209,211c214,216
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+213,216c218,221
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+218,219c223,224
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+225c230
+< item_name:cashews,total_quantity:4,total_cost:24.0 dollars,total_weight:12
+---
+> item_name:cashews,total_quantity:4,total_cost:24,total_weight:12
+232,236c237,241
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57000.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57000
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+239,243c244,248
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+247,248c252,253
+< item_name:bacon,total_quantity:3,total_cost:15.0 dollars,total_weight:9
+< item_name:lamb,total_quantity:1,total_cost:10.0 dollars,total_weight:6
+---
+> item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+> item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+250,252c255,257
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+254,257c259,262
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+259,260c264,265
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+267c272,277
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+272,276c282,286
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57025.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57025
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+279,283c289,293
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+287,289c297,299
+< item_name:lamb,total_quantity:2,total_cost:16.0 dollars,total_weight:12
+< item_name:mushrooms,total_quantity:1,total_cost:4.0 dollars,total_weight:3
+< item_name:salmon,total_quantity:2,total_cost:22.0 dollars,total_weight:8
+---
+> item_name:lamb,total_quantity:2,total_cost:16,total_weight:12
+> item_name:mushrooms,total_quantity:1,total_cost:4,total_weight:3
+> item_name:salmon,total_quantity:2,total_cost:22,total_weight:8
+291,294c301,304
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+296,297c306,307
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+304c314,319
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+312,316c327,331
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57067.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57067
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+319,323c334,338
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+327,330c342,345
+< item_name:lamb,total_quantity:1,total_cost:8.0 dollars,total_weight:6
+< item_name:mushrooms,total_quantity:3,total_cost:9.0 dollars,total_weight:9
+< item_name:salmon,total_quantity:1,total_cost:11.0 dollars,total_weight:4
+< item_name:sushi,total_quantity:1,total_cost:20.0 dollars,total_weight:3
+---
+> item_name:lamb,total_quantity:1,total_cost:8,total_weight:6
+> item_name:mushrooms,total_quantity:3,total_cost:9,total_weight:9
+> item_name:salmon,total_quantity:1,total_cost:11,total_weight:4
+> item_name:sushi,total_quantity:1,total_cost:20,total_weight:3
+332,333c347,348
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+340c355,360
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+345,349c365,369
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57067.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57067
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+352,356c372,376
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:200.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+360,361c380,381
+< item_name:salmon,total_quantity:3,total_cost:30.0 dollars,total_weight:12
+< item_name:sushi,total_quantity:2,total_cost:34.0 dollars,total_weight:6
+---
+> item_name:salmon,total_quantity:3,total_cost:30,total_weight:12
+> item_name:sushi,total_quantity:2,total_cost:34,total_weight:6
+368c388,393
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+373,377c398,402
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38000.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38000
+380,384c405,409
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:136.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:136
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+393c418,423
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+397c427
+< item_name:cashews,total_quantity:4,total_cost:24.0 dollars,total_weight:12
+---
+> item_name:cashews,total_quantity:4,total_cost:24,total_weight:12
+406,410c436,440
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38024.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38024
+413,417c443,447
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:112.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:112
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+425c455,460
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:3
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+> OK:display_completed
+437,441c472,476
+< name:aldi,revenue:20000.0 dollars
+< name:fresh_market,revenue:57131.0 dollars
+< name:publix,revenue:61000.0 dollars
+< name:sprouts,revenue:33000.0 dollars
+< name:trader_joes,revenue:38024.0 dollars
+---
+> name:aldi,revenue:20000
+> name:fresh_market,revenue:57131
+> name:publix,revenue:61000
+> name:sprouts,revenue:33000
+> name:trader_joes,revenue:38024
+444,448c479,483
+< name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33.0 dollars
+< name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600.0 dollars
+< name:Henry_Horton,phone:777-777-7777,rating:2,credit:112.0 dollars
+< name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300.0 dollars
+< name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400.0 dollars
+---
+> name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:33
+> name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+> name:Henry_Horton,phone:777-777-7777,rating:2,credit:112
+> name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+> name:Samuel_Schaefer,phone:000-000-0000,rating:1,credit:400
+456c491,496
+< 
+---
+> name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+> name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+> name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:3
+> name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:7
+> name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:4
+> OK:display_completed
