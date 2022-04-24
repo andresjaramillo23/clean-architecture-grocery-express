@@ -1,15 +1,15 @@
-## Running Locally
-Before running any of the scripts, make sure they have the appropriate permissions to be executed in your terminal:
+## Running Locally with Linux/Unix
+Before running any of the scripts, navigate to the `backend/scripts` directory and make sure they have the appropriate permissions to be executed in your terminal:
 ```
-chmod 777 backend/scripts/batch.sh
-chmod 777 backend/scripts/cleanup.sh
-chmod 777 backend/scripts/setup.sh
-chmod 777 backend/scripts/test.sh
-chmod 777 backend/scripts/view_pods.sh
+chmod 777 batch.sh
+chmod 777 cleanup.sh
+chmod 777 setup.sh
+chmod 777 test.sh
+chmod 777 view_pods.sh
 ```
 To set up the docker swarm environment run:
 ```
-./backend/scripts/setup.sh 
+./setup.sh 
 ```
 This script will set up:
 - A docker swarm network ingress 
@@ -19,33 +19,41 @@ This script will set up:
 
 
 ## Testing
-### Testing all files in batch 
+### Testing all files in batch
 In order to test all command files within the `test_scenarios` directory and compare them to the 
 expected results defined in the `test_results` directory,
 run the command:
 ```
-./backend/scripts/batch.sh 
+./batch.sh 
 ```
 The results of the comparison will be located in the `docker_results` directory.
+
+Once testing is complete, scale back down to 1 replica using:
+
 
 ### Testing single scenarios
 To test specific scenarios, run the command (01 can be replaced with desired scenario):
 ```
-./backend/scripts/test.sh 01
+./test.sh 01
 ```
 
-## View backend pod's ip addresses
-This command allows you to see the ip addresses of the backend pods running in the docker swarm environment: 
+## Scaling
+To scale up backend server pods to 7 replicas, run:
 ```
-./backend/scripts/view_pods.sh
+docker service scale grocery-express-service=7
 ```
 
-You can also see the load balancer in action by visiting `localhost:8081/test`. 
+This command allows you to see the ip addresses of the backend pods running in the docker swarm environment:
+```
+./view_pods.sh
+```
+
+You can also see the load balancer in action by visiting `localhost:8081/test`.
 This will return the pod's id address as the response body.
-If you refresh that page, you can see the ip address change between the 3 pods.
+If you refresh that page, you can see the ip address change between the different pods.
 
 ## Clean up 
 This command stops and removes the docker swarm services along with the unused docker containers.
 ```
-./backend/scripts/cleanup.sh
+./cleanup.sh
 ```
