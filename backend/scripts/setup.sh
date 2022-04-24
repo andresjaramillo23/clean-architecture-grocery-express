@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#docker swarm init
+docker swarm init
 
 docker pull postgres:9.6.12
 docker build -t gatech/backend ../
@@ -17,7 +17,7 @@ docker service rm  $(docker service ls -q -f name=postgres-service)
 docker service rm  $(docker service ls -q -f name=express-nginx-service)
 
 docker service create --network sad-local-network --name postgres-service -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres:9.6.12
-docker service create --replicas 3 --network sad-local-network --name grocery-express-service -p 8081:8080 gatech/backend
+docker service create --replicas 1 --network sad-local-network --name grocery-express-service -p 8081:8080 gatech/backend
 docker service create --network sad-local-network --name express-nginx-service -p 8080:80 gatech/express-nginx
 
 docker service ls
