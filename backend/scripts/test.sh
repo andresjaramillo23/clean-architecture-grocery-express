@@ -2,7 +2,6 @@
 
 SCENARIO=$1
 
-mkdir -p ./docker_results
 
 ## use this to ssh into pod
 #docker exec -it $(docker ps -q -f name=grocery-express-service) sh
