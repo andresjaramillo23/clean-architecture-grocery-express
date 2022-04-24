@@ -38,9 +38,9 @@ To test specific scenarios, run the command (01 can be replaced with desired sce
 ```
 
 ## Scaling
-To scale up backend server pods to 7 replicas, run:
+To scale up backend server pods to 3 replicas, run:
 ```
-docker service scale grocery-express-service=7
+docker service scale grocery-express-service=3
 ```
 
 This command allows you to see the ip addresses of the backend pods running in the docker swarm environment:
